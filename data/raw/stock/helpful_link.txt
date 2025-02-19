@@ -1,0 +1,1 @@
+For harvest sec filinfs at scale, https://github.com/john-friedman/datamule-python?tab=readme-ov-file#Updating-Package-Data
