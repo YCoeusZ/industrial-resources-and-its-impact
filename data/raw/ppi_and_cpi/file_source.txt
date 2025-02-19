@@ -1,0 +1,4 @@
+All PPI and CPI data in general, https://download.bls.gov/pub/time.series/
+
+ppi_ind_series.txt, https://download.bls.gov/pub/time.series/pc/pc.series 
+ppi_com_series.txt, https://download.bls.gov/pub/time.series/wp/wp.series
