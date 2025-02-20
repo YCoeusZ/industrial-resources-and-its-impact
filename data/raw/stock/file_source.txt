@@ -4,3 +4,4 @@ ISIC_Rev_4_to_2022_NAICS.xlsx, https://www.census.gov/naics/?68967
 company_CIK_SIC.csv, https://raw.githubusercontent.com/john-friedman/datamule-python/refs/heads/main/datamule/datamule/data/company_metadata.csv
 SIC_and NAIC_Code_Reference.xls, https://mde.maryland.gov/programs/permits/WaterManagementPermits/Documents/GDP%20Stormwater/SIC%20and%20NAIC%20Code%20Reference.xls
 tabula-NAICS-to-SIC-Crosswalk.csv, https://github.com/bpluly/G30_SIC/blob/master/tabula-NAICS-to-SIC-Crosswalk.csv
+sp500_historical_weight.csv, https://www.kaggle.com/datasets/akshaytolwani/s-and-p-500-constituents-with-weights-2009-2024?select=sp500_historical.csv
