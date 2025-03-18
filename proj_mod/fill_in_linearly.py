@@ -1,6 +1,6 @@
 # Filling in a dataframe with a col of dates linearly. This mod needs pandas. 
 
-# If the dates are expressed as strings in form "YYYY-MM-DD" 
+# If the dates are expressed as strings in form "YYYY-MM-DD" (too lazy to write for now, maybe later)
 
 # If the dates are expressed as datetime data 
 
@@ -27,7 +27,7 @@ def v_datetime(df_in, str_date_col, str_col):
         days_between=(df_in.loc[index_after][str_date_col]-df_in.loc[index_before][str_date_col]).days
         days_to=(df_in.loc[index][str_date_col]-df_in.loc[index_before][str_date_col]).days
         prop=days_to/days_between
-        value_diff=df_in.loc[index_after][str_col]-df_in.loc[index_after][str_col]
-        value=value_diff*prop
+        value_diff=df_in.loc[index_after][str_col]-df_in.loc[index_before][str_col]
+        value=value_diff*prop+df_in.loc[index_before][str_col]
         df_in.at[index,str_col]=value
     return df_in
