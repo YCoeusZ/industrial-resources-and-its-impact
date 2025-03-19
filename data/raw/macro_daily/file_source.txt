@@ -1,0 +1,3 @@
+copper-prices-historical-chart-data.csv, fed-funds-rate-historical-chart.csv, gold-price-last-ten-years.csv, palladium-prices-historical-chart-data.csv, platinum-prices-historical-chart-data.csv, silver_adjusted.csv (adjusted against inflation by cpi): www.macrotrends.net.
+gold_and_silver_kaggle: https://www.kaggle.com/datasets/kapturovalexander/gold-and-silver-prices-2013-2023?select=gold+prices.csv
+DFF.csv: https://fred.stlouisfed.org/series/DFF
