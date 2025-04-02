@@ -1,4 +1,4 @@
-#This contains a function that takes all_data_collection.csv or all_data_inj_adj_collection.csv like pandas dataframe, and shit the collumn one wants to down by a number of index one wants to. 
+#This contains a function that takes all_data_collection.csv or all_data_inj_adj_collection.csv like pandas dataframe, and shift the collumn one wants to down by a number of index one wants to. 
 #This function take into consideration of the missing data starting Dec-31-2016 and ending Jul-05-2017. 
 #This function requires pandas and numpy 
 
@@ -7,7 +7,7 @@ import numpy
 
 def shifter(df_in, str_col, int_shift): 
     """
-    A function that takes all_data_collection.csv or all_data_inj_adj_collection.csv like pandas dataframe, and shit the collumn one wants to down by a number of index one wants to. 
+    A function that takes all_data_collection.csv or all_data_inj_adj_collection.csv like pandas dataframe, and shift the collumn one wants to down by a number of index one wants to. 
     This function take into consideration of the missing data starting Dec-31-2016 and ending Jul-05-2017. 
     :param df_in: A all_data_collection.csv or all_data_inj_adj_collection.csv like pandas dataframe. 
     :param str_col: The name of the column one wants to shift (down). 
