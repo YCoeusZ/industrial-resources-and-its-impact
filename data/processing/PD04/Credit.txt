@@ -1,2 +1,2 @@
 The original creation of function process_ppi_file() should be credited to Xiangyi Tao, and Thiago Brasileiro Feitosa. 
-Yuan debugged and adjusted the function to create the files in data/processed with the function. 
+Yuan debugged and adjusted the function to create the PPI... files in data/processed with the function. 
