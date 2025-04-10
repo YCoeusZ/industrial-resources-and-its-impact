@@ -1,4 +1,4 @@
 The original creation of function process_ppi_file() should be credited to Xiangyi Tao, and Thiago Brasileiro Feitosa. 
 Yuan debugged and adjusted the function to create the PPI... files in data/processed with the function. 
 
-The codes were originally included in PD03 (by mistake), Yuan moved them here into PD04. 
+The codes were originally included in another folder intended for another task branch (by mistake), Yuan moved them here into PD04. 
