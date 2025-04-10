@@ -2,11 +2,12 @@
 import pandas as pd
 import numpy as np 
 
-def create_data_RNN(df_X_in,df_y_in,int_lag): 
+def create_data_RNN(df_X_in,df_y_in,int_lag,int_jump=1): 
     """
     :param df_X_in: A dataframe of training parameters. 
     :param df_y_in: A dataframe of training target with only one column and same number of rows as df_X_in. 
-    :param int_lag: Which row in the original data should the first index of output start. 
+    :param int_lag: How many historical value, in addition to current parameters, to include. 
+    "param int_jump: The jump between two historical values. 
     :return: arr_X then arr_y as the training data. 
     """
     df_X_in_c=df_X_in.copy(deep=True).reset_index(drop=True)
@@ -17,5 +18,5 @@ def create_data_RNN(df_X_in,df_y_in,int_lag):
     lst_y=df_y_in_c.iloc[int_lag:,0].values
     for index in range(int_lag,int_len): 
         for sub_ind in range(0,int_lag+1): 
-            lst_X[index-int_lag, int_lag-sub_ind]= df_X_in_c.iloc[index-sub_ind,:].values
+            lst_X[index-int_lag, int_lag-sub_ind]= df_X_in_c.iloc[index-int_jump*sub_ind,:].values
     return lst_X, lst_y
