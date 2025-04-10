@@ -1,5 +1,6 @@
-1, The EBM folder is worked on by Yuan Zhang, Kayode Oyedele, and Wojciech Tralle. 
-2, The NN folder is worked on by Yuan Zhang, Kayode Oyedele, and Wojciech Tralle. 
-3, The MARS (actually used SPLINES instead of MARS) folder is worked on by Xiangti Tao, Thiago Brasileiro Feitosa, and Rafael Almeida Fernandes. 
+1, The EBM folder is worked on by EBM team: Yuan Zhang, Kayode Oyedele, and Wojciech Tralle. 
+2, The NN folder is worked on by EBM team: Yuan Zhang, Kayode Oyedele, and Wojciech Tralle. 
+3, The MARS (actually used SPLINES instead of MARS) folder is worked on by MARS team: Xiangti Tao, Thiago Brasileiro Feitosa, and Rafael Almeida Fernandes. 
+4, The folder SPLINE_YUAN is worked on by Yuan Zhang alone. This is just Yuan's version of working with the spline model, this is not related to the work done by the MARS team. 
 
 Rule: No work will be done "cross team border". But suggestions are welcomed "cross team border". 
