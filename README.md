@@ -63,7 +63,7 @@ See following the *task code* and *task* correspondence:
 |DCO02|Collecting PPI data according to the NAICS chosen with API| 
 |PD01|Created the *tech (stock) index*|
 |PD02|Create proportional change of tech index| 
-|PD03|Processing daily macro data, this includes fed rates and resource prices|
+|PD03|Processing daily macro data, this includes fed rates, resource prices, and alikes|
 |PD04|Processing monthly macro data, this includes PPI data| 
 |EDA|Doing EDA and playing around with the data| 
 |PD05|Create main datasets, this includes creating the no inflation adjusted dataset and creating the inlfation adjusted dataset| 
