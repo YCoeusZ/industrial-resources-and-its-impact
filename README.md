@@ -190,7 +190,7 @@ And this conjeture is what cause us to, further, create the inflation adjusted d
 
 * **Inflation adjusted dataset**:
 
-The haatmap of correlations (inflation adjusted version, target is on the first row): 
+The haatmap of correlations (inflation adjusted version, target is on the first row): \
     ![inf_corr_heat](https://github.com/user-attachments/assets/d4bd2618-348d-4602-a178-3b46daadce0e)
 
 Scatter plot between the stock index proportional change and the copper price proportional change (both relative to the prior 20th day and inflation adjusted): \
@@ -216,10 +216,10 @@ The further data processing with inflation adjustment increase some of the corre
      
        + **On the inflation adjusted data**: It appears that training without outliers is preferred when the shifting number is low, but the difference is small when the shifting number is high. The error increases at first but then reduces while the shifting number increases. Including outliers in the validation set or not did not make much of a difference to the trends. Our preferred final model produces: mse 38.4721 (R^2 value -0.5931) when trained with extreme data and 3 shiftings.
      
-         Scatter plot with red points being true values and blue points being predicted value (on the test set):
+         Scatter plot with red points being true values and blue points being predicted value (on the test set):\
          ![inf_adj_extreme_3_shifting](https://github.com/user-attachments/assets/b5671144-1aaf-43a2-b410-15b84999eb3b)
 
-         Feature importance of preferred model provided by EBM:
+         Feature importance of preferred model provided by EBM:\
          ![feature_anal_inf_adj_extreme_shifted](https://github.com/user-attachments/assets/69e22c73-79ff-4bc3-af2d-4934b6449228)
          From top to bottom, the features are:
          
@@ -251,13 +251,13 @@ The further data processing with inflation adjustment increase some of the corre
 
       + **RNN**: Our preferred model produced mse 31.4635 (R^2 value -0.3029) with 190 epochs and 6 lag length.
      
-        Scatter plot with red points being true values and blue points being predicted value (on the test set):
+        Scatter plot with red points being true values and blue points being predicted value (on the test set):\
         ![in_adj_rnn](https://github.com/user-attachments/assets/7ec4ae69-8df7-4958-bb9e-6ccb9c6107f6)
 
      
       + **MLP with Attention layer model**: Our preferred model produced mse 23.06 (R^2 value 0.0451) with no lag and 300 epochs.
      
-        Scatter plot with red points being true values and blue points being predicted value (on the test set):
+        Scatter plot with red points being true values and blue points being predicted value (on the test set):\
         ![inf_adj_MLP_attention](https://github.com/user-attachments/assets/c24d31e4-4425-4506-a18c-b7efbd1ff1f1)
         
         **The MLP with attention layer model is our best model** 
@@ -277,7 +277,7 @@ The further data processing with inflation adjustment increase some of the corre
      
         + **On the inflation adjusted data**: Our best model produced mse 25.5181 (R^2 value -0.0567) when trained without outliers.
      
-          Scatter plot with red points being true values and blue points being predicted value (on the test set):
+          Scatter plot with red points being true values and blue points being predicted value (on the test set):\
           ![inf_adj_extreme_spline](https://github.com/user-attachments/assets/1ef5e09f-b659-4e9c-af50-75b4d46f646a)
 
 
