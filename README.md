@@ -161,7 +161,7 @@ As a clarification: the goal is NOT to predict the future of the stock market (e
       
     - **Parameters**: proportional change of price of raw resources relative to previous trading day, proportional change of PPI’s relative to previous month, federal fund rate.
       
-    - **Train and test split**: Test set start on date 2024-Jan-01 (Target has Variance: 1.6098). 
+    - **Train and test split**: Test set start on date 2024-Jan-01 (Target has (Population) Variance: 1.6098). 
 
 * Inflation adjusted dataset: For each row (one for each trading day), we have in columns: 
 
@@ -169,7 +169,7 @@ As a clarification: the goal is NOT to predict the future of the stock market (e
 
     - **Parameters**: proportional change of price of raw resources relative to 20th trading day prior, proportional change of PPI’s relative to previous month, federal fund rate.
  
-    - **Train and test split**: Test set start on date 2024-Jan-01 (Target has Variance: 24.1491). 
+    - **Train and test split**: Test set start on date 2024-Jan-01 (Target has (Population) Variance: 24.1491). 
 
 ## Models, cross-validations, and results 
 
