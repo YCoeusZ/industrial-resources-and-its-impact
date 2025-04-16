@@ -155,7 +155,7 @@ As a clarification: the goal is NOT to predict the future of the stock market (e
 
 ## Datasets Created 
 
-* No inflation adjusted dataset: For each row (one for each trading day), we have in columns:
+* **No inflation adjusted dataset**: For each row (one for each trading day), we have in columns:
 
     - **Target**: proportional change of tech stock index relative to previous trading day.
       
@@ -163,17 +163,44 @@ As a clarification: the goal is NOT to predict the future of the stock market (e
       
     - **Train and test split**: Test set start on date 2024-Jan-01 (Target has (Population) Variance: 1.6098). 
 
-* Inflation adjusted dataset: For each row (one for each trading day), we have in columns: 
+* **Inflation adjusted dataset**: For each row (one for each trading day), we have in columns: 
 
-    - **Target**: proportional change of tech stock index relative to 20th trading day prior. 
+    - **Target**: inflation adjusted proportional change of tech stock index relative to 20th trading day prior. 
 
-    - **Parameters**: proportional change of price of raw resources relative to 20th trading day prior, proportional change of PPI’s relative to previous month, federal fund rate.
+    - **Parameters**: inflation adjusted proportional change of price of raw resources relative to 20th trading day prior, inflation adjusted proportional change of PPI’s relative to previous month, federal fund rate.
  
-    - **Train and test split**: Test set start on date 2024-Jan-01 (Target has (Population) Variance: 24.1491). 
+    - **Train and test split**: Test set start on date 2024-Jan-01 (Target has (Population) Variance: 24.1491).
+ 
+## EDA 
+
+* **No Inflation adjustment dataset**:
+
+The heatmap of correlations: 
+    ![no_inf_corr_heat](https://github.com/user-attachments/assets/cb18b1c3-6a9c-4a24-b411-9e70d29a4afc)
+
+In the EDA, the key observation is that there is very little correlation between the training target (seen on the first row in about heat map of correlations) and each of the single parameters.
+
+An example of scatter plot between the daily stock index proportional change and the daily copper price proportional change: 
+    ![no_inf_cop](https://github.com/user-attachments/assets/b04cb3eb-7061-4ff8-afd4-66bb88f0f8e0)
+
+In fact, a counterintuitive behavior has been noticed: the stock index seem to (ever so slightly) increase when resource price is increasing (the graph above serves as an example, and the positive correlation indicates a positive sloped linear regression line). 
+We **conjecture** that this is caused by inflation, which motivate the further data processing of creating inflation adjusted version of the data. 
+
+And this conjeture is what cause us to, further, create the inflation adjusted dataset. 
+
+* **Inflation adjusted dataset**:
+
+The haatmap of correlations (inflation adjusted version, target is on the first row): 
+    ![inf_corr_heat](https://github.com/user-attachments/assets/d4bd2618-348d-4602-a178-3b46daadce0e)
+
+Scatter plot between the stock index proportional change and the copper price proportional change (both relative to the prior 20th day and inflation adjusted): \
+    ![inf_cop](https://github.com/user-attachments/assets/796ac9c3-d227-4d77-83bd-302e22de1445)
+
+The further data processing with inflation adjustment increase some of the correlations, and the counterintuitive behavior even became more pronounced in some cases. This disproves our conjecture. 
 
 ## Models, cross-validations, and results 
 
-*The metric we will be using is mse (mean squared error). *
+**The metric we will be using is mse (mean squared error). We will only provide graphs on the inflation adjusted dataset models in this README file.**
 
 * **EBM (Explainable Boosting Machine)**: 
 
@@ -187,7 +214,30 @@ As a clarification: the goal is NOT to predict the future of the stock market (e
 
        + **On the not inflation adjusted data**: It turns out that the higher the shifting, the better the EBM pipeline performs on validation sets without outliers, but worse when including outliers in the validation set. The impact of including or excluding outliers in the training data is small when the shifting number is small, but training with outliers produces better results when the shifting number is high. Our preferred final models produce: mse 1.5846 (R^2 value 0.0157) when trained with outliers and 10 shiftings, and mse 1.5694 (R^2 value 0.0251) when trained with outliers without any shiftings.
      
-       + **On the inflation adjusted data**: It appears that training without outliers is preferred when the shifting number is low, but the difference is small when the shifting number is high. The error increases at first but then reduces while the shifting number increases. Including outliers in the validation set or not did not make much of a difference to the trends. Our preferred final model produces: mse 38.4721 (R^2 value -0.5931) when trained with extreme data and 3 shiftings. 
+       + **On the inflation adjusted data**: It appears that training without outliers is preferred when the shifting number is low, but the difference is small when the shifting number is high. The error increases at first but then reduces while the shifting number increases. Including outliers in the validation set or not did not make much of a difference to the trends. Our preferred final model produces: mse 38.4721 (R^2 value -0.5931) when trained with extreme data and 3 shiftings.
+     
+         Scatter plot with red points being true values and blue points being predicted value (on the test set):
+         ![inf_adj_extreme_3_shifting](https://github.com/user-attachments/assets/b5671144-1aaf-43a2-b410-15b84999eb3b)
+
+         Feature importance of preferred model provided by EBM:
+         ![feature_anal_inf_adj_extreme_shifted](https://github.com/user-attachments/assets/69e22c73-79ff-4bc3-af2d-4934b6449228)
+         From top to bottom, the features are:
+         
+         + Tech index pro-change 20 (trading) days ago. 
+         + Copper price pro-change 
+         + Fed rate 20 (trading)days ago
+         + Tech index pro-change 40 days ago
+         + Gold price pro-change
+         + Crude oil price pro-change 
+         + PPI-5132 (software publisher) pro-change
+         + PPI-517 (Telecommunications) pro-change 60 days ago
+         + Crude oil price pro-change 40 days ago 
+         + PPI-339 (Miscellaneous Durable Goods Manufacturing) pro-change 40 days ago 
+         + PPI-332 (Fabricated metal product manufacturing) pro-change 40 days ago 
+         + PPI-5132 (Software publisher) pro-change 60 days ago 
+         + Platinum price pro-change 60 days ago
+
+
 
 * **NN (Neural Network)**: 
 
@@ -195,13 +245,23 @@ As a clarification: the goal is NOT to predict the future of the stock market (e
 
     - Clarification: We only worked on the dataset with inflation adjustment. 
 
-    - Cross-validation: We created two different models, one with a RNN (recurrent neural network) to include the impact of historical data, and a MLP with attention layer to include in the consideration of interactions. For each of these, we proceed with cross-validation by changing epoch numbers of each model. The attention layer model also includes cross-validation through including different lags to include lagged data from history. The RNN also lag length (determining how much past data to include). 
+    - Cross-validation: We created two different models, one with a RNN (recurrent neural network) to include the impact of historical data, and a MLP with attention layer to include in the consideration of interactions. For each of these, we proceed with cross-validation by changing epoch numbers of each model. The attention layer model also includes cross-validation through including different lags to include lagged data from history. The RNN also lag length (determining how much past data to include).
 
     - Results:
 
       + **RNN**: Our preferred model produced mse 31.4635 (R^2 value -0.3029) with 190 epochs and 6 lag length.
      
+        Scatter plot with red points being true values and blue points being predicted value (on the test set):
+        ![in_adj_rnn](https://github.com/user-attachments/assets/7ec4ae69-8df7-4958-bb9e-6ccb9c6107f6)
+
+     
       + **MLP with Attention layer model**: Our preferred model produced mse 23.06 (R^2 value 0.0451) with no lag and 300 epochs.
+     
+        Scatter plot with red points being true values and blue points being predicted value (on the test set):
+        ![inf_adj_MLP_attention](https://github.com/user-attachments/assets/c24d31e4-4425-4506-a18c-b7efbd1ff1f1)
+        
+        **The MLP with attention layer model is our best model** 
+
      
 * **SPLINE**: 
 
@@ -216,6 +276,10 @@ As a clarification: the goal is NOT to predict the future of the stock market (e
         + **On the not inflation adjusted data**: Our best model produced mse 1.4930 (R^2 value 0.0726) when trained without outliers.
      
         + **On the inflation adjusted data**: Our best model produced mse 25.5181 (R^2 value -0.0567) when trained without outliers.
+     
+          Scatter plot with red points being true values and blue points being predicted value (on the test set):
+          ![inf_adj_extreme_spline](https://github.com/user-attachments/assets/1ef5e09f-b659-4e9c-af50-75b4d46f646a)
+
 
 ## Future 
 
