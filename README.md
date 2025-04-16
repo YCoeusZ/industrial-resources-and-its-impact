@@ -175,12 +175,12 @@ As a clarification: the goal is NOT to predict the future of the stock market (e
 
 * **No Inflation adjustment dataset**:
 
-The heatmap of correlations: 
+The heatmap of correlations: \
     ![no_inf_corr_heat](https://github.com/user-attachments/assets/cb18b1c3-6a9c-4a24-b411-9e70d29a4afc)
 
 In the EDA, the key observation is that there is very little correlation between the training target (seen on the first row in about heat map of correlations) and each of the single parameters.
 
-An example of scatter plot between the daily stock index proportional change and the daily copper price proportional change: 
+An example of scatter plot between the daily stock index proportional change and the daily copper price proportional change: \
     ![no_inf_cop](https://github.com/user-attachments/assets/b04cb3eb-7061-4ff8-afd4-66bb88f0f8e0)
 
 In fact, a counterintuitive behavior has been noticed: the stock index seem to (ever so slightly) increase when resource price is increasing (the graph above serves as an example, and the positive correlation indicates a positive sloped linear regression line). 
