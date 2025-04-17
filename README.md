@@ -62,19 +62,19 @@ See following the *task code* and *task* correspondence:
 
 | task code | task explanation | task dependency|
 |-----------|-------------------|-------------|
-|DC01|Identify stable tech company (i.e. a tech compnay, classified with NAICS, maintaining sp 500 index status during a continuous period that we care)|DC02|
-|DC02|Identify the NAICS codes that we consider tech industry|NONE|
-|DCO02|Collecting PPI data according to the NAICS chosen with API|DC01|
-|PD01|Created the *tech (stock) index*|DC01|
-|PD02|Create proportional change of tech index|PD01|
-|PD03|Processing daily macro data, this includes fed rates, resource prices, and alikes|NONE|
-|PD04|Processing monthly macro data, this includes PPI data|DCO02|
+|DC01|Data Cleaning 01: Identify stable tech company (i.e. a tech compnay, classified with NAICS, maintaining sp 500 index status during a continuous period that we care)|DC02|
+|DC02|Data Cleaning 02: Identify the NAICS codes that we consider tech industry|NONE|
+|DCO02|Data Collecting 02: Collecting PPI data according to the NAICS chosen with API|DC01|
+|PD01|Processing Data 01: Created the *tech (stock) index*|DC01|
+|PD02|Processing Data 02: Create proportional change of tech index|PD01|
+|PD03|Processing Data 03: Processing daily macro data, this includes fed rates, resource prices, and alikes|NONE|
+|PD04|Processing Data 04: Processing monthly macro data, this includes PPI data|DCO02|
 |EDA|Doing EDA and playing around with the data|PD05 (returned to EDA after some alterations were made in PD05)|
-|PD05|Create main datasets, this includes creating the no inflation adjusted dataset and creating the inlfation adjusted dataset|PD04,PD03,PD01,EDA (alterations are made after EDA)|
-|MTEBM|Training related files for Explanable Boosting Machine|PD05|
-|MTMARS|Training related files for Multivariate Adaptive Regression Splines|PD05|
-|MTNN|Training related files for Neural Networks|PD05|
-|MTSPLINE|Training related files for Spline model|PD05| 
+|PD05|Processing Data 05: Create main datasets, this includes creating the no inflation adjusted dataset and creating the inlfation adjusted dataset|PD04,PD03,PD01,EDA (alterations are made after EDA)|
+|MTEBM|Machine Training EBM: Training related files for Explanable Boosting Machine|PD05|
+|MTMARS|Machine Training MARS: Training related files for Multivariate Adaptive Regression Splines|PD05|
+|MTNN|Machine Training NN: Training related files for Neural Networks|PD05|
+|MTSPLINE|Machine Training SPLINE: Training related files for Spline model|PD05| 
 
 * ./data/data_process.py is designed to generate all needed processed data from raw (the only data collected through API is the PPI data, all other data are pre-requisite for the data processing step). 
 
@@ -156,7 +156,7 @@ As a clarification: the goal is NOT to predict the future of the stock market (e
 \begin{matrix}
     \text{Inflation adjusted} \\ 
     \text{proportional change on day } t
-\end{matrix}:=\frac{\text{value on day }t}{\text{value on day }t-20}\times \frac{\text{CPI precious month}}{\text{CPI current month}}-1
+\end{matrix}:=\frac{\text{value on day }t}{\text{value on day }t-20}\times \frac{\text{CPI previous month}}{\text{CPI current month}}-1
 ```
 
 **Remark:** After another round of EDA, it can be seen that some of the correlations increased, but the counterintuitive behavior is intensified, this disproves our conjecture. 
