@@ -56,21 +56,21 @@ All ipynb files are named with format:
 
 See following the *task code* and *task* correspondence: 
 
-| task code | task explanation | 
-|-----------|-------------------|
-|DC01|Identify stable tech company (i.e. a tech compnay, classified with NAICS, maintaining sp 500 index status during a continuous period that we care)|
-|DC02|Identify the NAICS codes that we consider tech industry| 
-|DCO02|Collecting PPI data according to the NAICS chosen with API| 
-|PD01|Created the *tech (stock) index*|
-|PD02|Create proportional change of tech index| 
-|PD03|Processing daily macro data, this includes fed rates, resource prices, and alikes|
-|PD04|Processing monthly macro data, this includes PPI data| 
-|EDA|Doing EDA and playing around with the data| 
-|PD05|Create main datasets, this includes creating the no inflation adjusted dataset and creating the inlfation adjusted dataset| 
-|MTEBM|Training related files for Explanable Boosting Machine| 
-|MTMARS|Training related files for Multivariate Adaptive Regression Splines| 
-|MTNN|Training related files for Neural Networks| 
-|MTSPLINE|Training related files for Spline model| 
+| task code | task explanation | task dependency|
+|-----------|-------------------|-------------|
+|DC01|Identify stable tech company (i.e. a tech compnay, classified with NAICS, maintaining sp 500 index status during a continuous period that we care)|DC02|
+|DC02|Identify the NAICS codes that we consider tech industry|NONE|
+|DCO02|Collecting PPI data according to the NAICS chosen with API|DC01|
+|PD01|Created the *tech (stock) index*|DC01|
+|PD02|Create proportional change of tech index|PD01|
+|PD03|Processing daily macro data, this includes fed rates, resource prices, and alikes|NONE|
+|PD04|Processing monthly macro data, this includes PPI data|DCO02|
+|EDA|Doing EDA and playing around with the data|PD05 (returned to EDA after some alterations were made in PD05)|
+|PD05|Create main datasets, this includes creating the no inflation adjusted dataset and creating the inlfation adjusted dataset|PD04,PD03,PD01,EDA (alterations are made after EDA)|
+|MTEBM|Training related files for Explanable Boosting Machine|PD05|
+|MTMARS|Training related files for Multivariate Adaptive Regression Splines|PD05|
+|MTNN|Training related files for Neural Networks|PD05|
+|MTSPLINE|Training related files for Spline model|PD05| 
 
 ## Contributors 
 Kayode Oyedele, Rafael Almeida Fernandes, Thiago Brasileiro Feitosa, Wojciech Tralle, Xiangyi Tao, and Yuan Zhang. 
