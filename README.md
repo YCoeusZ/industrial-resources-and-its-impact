@@ -229,7 +229,7 @@ The further data processing with inflation adjustment increase some of the corre
 
          Feature importance of preferred model provided by EBM:\
          ![feature_anal_inf_adj_extreme_shifted](https://github.com/user-attachments/assets/69e22c73-79ff-4bc3-af2d-4934b6449228)
-         From top to bottom, the features are (all "days" means "trading days" in the following list):
+         From top to bottom, the features are (all "days" mean "trading days" in the following list):
          
          + Tech index pro-change 20 days ago. 
          + Copper price pro-change 
