@@ -4,5 +4,5 @@
 4,"processing/PD02/PD02_proportional_change_for_stock.py"
 5,"processing/PD03/PD03_collection.py"
 6,"collecting/DCO02_collecting_ppi.py"
-7,"processing/PD04/pd04_monthly-to-daily-pro-ppi copy.py"
+7,"processing/PD04/pd04_monthly-to-daily-pro-ppi.py"
 8,"processing/PD05/PD05_collection.py"

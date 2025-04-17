@@ -8,5 +8,5 @@ subprocess.call(["python PD01_create_weighted_index.py"], cwd="./processing/PD01
 subprocess.call(["python PD02_proportional_change_for_stock.py"], cwd="./processing/PD02/", shell=True)
 subprocess.call(["python PD03_collection.py"], cwd="./processing/PD03/", shell=True)
 subprocess.call(["python DCO02_collecting_ppi.py"], cwd="./collecting/", shell=True)
-subprocess.call(["python pd04_monthly-to-daily-pro-ppi\ copy.py"], cwd="./processing/PD04/", shell=True)
+subprocess.call(["python pd04_monthly-to-daily-pro-ppi.py"], cwd="./processing/PD04/", shell=True)
 subprocess.call(["python PD05_collection.py"], cwd="./processing/PD05/", shell=True)
