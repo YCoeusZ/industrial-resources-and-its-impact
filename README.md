@@ -50,7 +50,7 @@
 ./proj_mod is the self created python module containing functions used accross files.  
 
 ## File naming explanation 
-All ipynb files are named with format: 
+* All ipynb files are named with format: 
 
 [*task code*]_[*further explanations*].ipynb 
 
@@ -72,9 +72,9 @@ See following the *task code* and *task* correspondence:
 |MTNN|Training related files for Neural Networks|PD05|
 |MTSPLINE|Training related files for Spline model|PD05| 
 
-./data/data_process.py is designed to generate all needed processed data from raw. 
+* ./data/data_process.py is designed to generate all needed processed data from raw. 
 
-In case the file does not operate correctly, please run .py files under ./data/ folder with order given in ./data/python_files_running_order.txt. 
+    - In case the file does not operate correctly, please run .py files under ./data/ folder with order given in ./data/python_files_running_order.txt. 
 
 ## Contributors 
 Kayode Oyedele, Rafael Almeida Fernandes, Thiago Brasileiro Feitosa, Wojciech Tralle, Xiangyi Tao, and Yuan Zhang. 
