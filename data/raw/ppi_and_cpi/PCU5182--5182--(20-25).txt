@@ -1,10 +1,12 @@
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
 |    series id    | year | period |  value  |                                                footnotes                                                |
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
-| PCU5182--5182-- | 2025 |  M01   | 117.036 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU5182--5182-- | 2025 |  M03   | 114.534 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU5182--5182-- | 2025 |  M02   | 115.825 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU5182--5182-- | 2025 |  M01   | 117.034 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
 | PCU5182--5182-- | 2024 |  M12   | 115.622 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU5182--5182-- | 2024 |  M11   | 115.670 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU5182--5182-- | 2024 |  M10   | 115.901 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU5182--5182-- | 2024 |  M11   | 115.670 |                                                                                                         |
+| PCU5182--5182-- | 2024 |  M10   | 115.901 |                                                                                                         |
 | PCU5182--5182-- | 2024 |  M09   | 115.887 |                                                                                                         |
 | PCU5182--5182-- | 2024 |  M08   | 116.022 |                                                                                                         |
 | PCU5182--5182-- | 2024 |  M07   | 116.121 |                                                                                                         |

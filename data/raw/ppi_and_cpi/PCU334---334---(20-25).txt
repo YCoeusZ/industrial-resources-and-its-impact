@@ -1,10 +1,12 @@
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
 |    series id    | year | period |  value  |                                                footnotes                                                |
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
-| PCU334---334--- | 2025 |  M01   | 104.452 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU334---334--- | 2024 |  M12   | 103.528 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU334---334--- | 2024 |  M11   | 103.035 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU334---334--- | 2024 |  M10   | 102.622 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU334---334--- | 2025 |  M03   | 104.783 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU334---334--- | 2025 |  M02   | 104.455 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU334---334--- | 2025 |  M01   | 104.420 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU334---334--- | 2024 |  M12   | 103.546 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU334---334--- | 2024 |  M11   | 103.077 |                                                                                                         |
+| PCU334---334--- | 2024 |  M10   | 102.619 |                                                                                                         |
 | PCU334---334--- | 2024 |  M09   | 102.283 |                                                                                                         |
 | PCU334---334--- | 2024 |  M08   | 101.996 |                                                                                                         |
 | PCU334---334--- | 2024 |  M07   | 101.913 |                                                                                                         |

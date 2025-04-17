@@ -1,10 +1,12 @@
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
 |    series id    | year | period |  value  |                                                footnotes                                                |
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
-| PCU314---314--- | 2025 |  M01   | 161.271 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU314---314--- | 2024 |  M12   | 160.799 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU314---314--- | 2024 |  M11   | 160.770 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU314---314--- | 2024 |  M10   | 161.707 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU314---314--- | 2025 |  M03   | 162.243 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU314---314--- | 2025 |  M02   | 162.176 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU314---314--- | 2025 |  M01   | 162.285 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU314---314--- | 2024 |  M12   | 160.559 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU314---314--- | 2024 |  M11   | 160.534 |                                                                                                         |
+| PCU314---314--- | 2024 |  M10   | 161.707 |                                                                                                         |
 | PCU314---314--- | 2024 |  M09   | 162.608 |                                                                                                         |
 | PCU314---314--- | 2024 |  M08   | 159.970 |                                                                                                         |
 | PCU314---314--- | 2024 |  M07   | 160.915 |                                                                                                         |

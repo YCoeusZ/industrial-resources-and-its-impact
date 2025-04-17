@@ -1,10 +1,12 @@
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
 |    series id    | year | period |  value  |                                                footnotes                                                |
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
-| PCU339---339--- | 2025 |  M01   | 152.223 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU339---339--- | 2024 |  M12   | 151.090 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU339---339--- | 2024 |  M11   | 150.825 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU339---339--- | 2024 |  M10   | 150.907 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU339---339--- | 2025 |  M03   | 153.016 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU339---339--- | 2025 |  M02   | 152.799 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU339---339--- | 2025 |  M01   | 152.378 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU339---339--- | 2024 |  M12   | 151.086 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU339---339--- | 2024 |  M11   | 150.821 |                                                                                                         |
+| PCU339---339--- | 2024 |  M10   | 150.905 |                                                                                                         |
 | PCU339---339--- | 2024 |  M09   | 150.477 |                                                                                                         |
 | PCU339---339--- | 2024 |  M08   | 150.321 |                                                                                                         |
 | PCU339---339--- | 2024 |  M07   | 150.016 |                                                                                                         |

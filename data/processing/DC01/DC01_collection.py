@@ -48,10 +48,27 @@ lst_weight_ticker_weird=[tic for tic in lst_weight_ticker if not bool(reg_allow.
 
 lst_tech_adj_ticker = list(df_com_CIK_SIC_NAICS_rele.tickers.unique())
 
+df_com_CIK_SIC_NAICS_rele.loc[445,"tickers"]="WKME"
+df_com_CIK_SIC_NAICS_rele.loc[872,"tickers"]="MRDB"
+df_com_CIK_SIC_NAICS_rele.loc[1518,"tickers"]="MRDB"
+df_com_CIK_SIC_NAICS_rele.loc[949,"tickers"]="NA"
+df_com_CIK_SIC_NAICS_rele.loc[1165,"tickers"]="TWOUQ"
+df_com_CIK_SIC_NAICS_rele.loc[1213,"tickers"]="SSOF"
+df_com_CIK_SIC_NAICS_rele.loc[1221,"tickers"]="EBIXQ"
+df_com_CIK_SIC_NAICS_rele.loc[1227,"tickers"]="GMHS"
+df_com_CIK_SIC_NAICS_rele.loc[1228,"tickers"]="NTCL"
+df_com_CIK_SIC_NAICS_rele.loc[1229,"tickers"]="HAHA"
+df_com_CIK_SIC_NAICS_rele.loc[1231,"tickers"]="WRD"
+df_com_CIK_SIC_NAICS_rele.loc[1236,"tickers"]="UEOP"
+df_com_CIK_SIC_NAICS_rele.loc[1242,"tickers"]="SSAI"
+df_com_CIK_SIC_NAICS_rele.loc[1308,"tickers"]="SFUNY"
+df_com_CIK_SIC_NAICS_rele.loc[1319,"tickers"]="WHSI"
+df_com_CIK_SIC_NAICS_rele.loc[1385,"tickers"]="DPSI"
+df_com_CIK_SIC_NAICS_rele.loc[1505,"tickers"]="LKRY"
+
 df_com_CIK_SIC_NAICS_rele.to_csv("../../processed/com_CIK_SIC_NAICS_rele.csv",index=False)
 
 lst_tech_adj_ticker = list(df_com_CIK_SIC_NAICS_rele.tickers.unique())
-
 lst_tech_adj_ticker_SINGULAR = []
 
 for i in range(len(lst_tech_adj_ticker)): 
@@ -246,9 +263,9 @@ lst_gpt_gen_new_old_tic = [
     ["Super League Enterprise, Inc.", "None", "None"]
 ]
 
-for lst_ele in lst_gpt_gen_new_old_tic: 
-    if lst_ele[1]=="None": 
-        print(lst_ele, lst_gpt_gen_new_old_tic.index(lst_ele))
+# for lst_ele in lst_gpt_gen_new_old_tic: 
+#     if lst_ele[1]=="None": 
+#         print(lst_ele, lst_gpt_gen_new_old_tic.index(lst_ele))
         
 for lst_ele in lst_gpt_gen_new_old_tic: 
     if lst_ele[1]=="None":
@@ -331,12 +348,13 @@ for str_ele in lst_tech_sp500_tic:
 lst_his_weight_tic=list(df_his_weight.ticker.unique())
 reg_allow=re.compile("^[A-Za-z0-9]*$")
 lst_his_weight_tic_wrd=[tic for tic in lst_his_weight_tic if not bool(reg_allow.fullmatch(tic))]
-def tic_is_in(str_tic): 
-    if str_tic in lst_his_weight_tic_wrd: 
-        com_tic=re.findall("([A-Za-z0-9]*)[^A-Za-z0-9]",str_tic)[0]
-        return com_tic in lst_tech_sp500_tic_sing
-    else: 
-        return str_tic in lst_tech_sp500_tic_sing 
+
+# def tic_is_in(str_tic): 
+#     if str_tic in lst_his_weight_tic_wrd: 
+#         com_tic=re.findall("([A-Za-z0-9]*)[^A-Za-z0-9]",str_tic)[0]
+#         return com_tic in lst_tech_sp500_tic_sing
+#     else: 
+#         return str_tic in lst_tech_sp500_tic_sing 
 
 lst_weight_tic_in_tech_500=[str_tic for str_tic in lst_his_weight_tic if tic_is_in(str_tic)]
 

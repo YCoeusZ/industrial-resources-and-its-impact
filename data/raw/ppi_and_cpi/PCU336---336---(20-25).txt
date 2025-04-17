@@ -1,10 +1,12 @@
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
 |    series id    | year | period |  value  |                                                footnotes                                                |
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
-| PCU336---336--- | 2025 |  M01   | 143.734 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU336---336--- | 2024 |  M12   | 143.522 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU336---336--- | 2024 |  M11   | 143.291 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU336---336--- | 2024 |  M10   | 143.063 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU336---336--- | 2025 |  M03   | 144.345 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU336---336--- | 2025 |  M02   | 144.142 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU336---336--- | 2025 |  M01   | 143.879 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU336---336--- | 2024 |  M12   | 143.535 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU336---336--- | 2024 |  M11   | 143.277 |                                                                                                         |
+| PCU336---336--- | 2024 |  M10   | 143.063 |                                                                                                         |
 | PCU336---336--- | 2024 |  M09   | 142.576 |                                                                                                         |
 | PCU336---336--- | 2024 |  M08   | 142.423 |                                                                                                         |
 | PCU336---336--- | 2024 |  M07   | 142.266 |                                                                                                         |

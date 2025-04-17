@@ -1,10 +1,12 @@
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
 |    series id    | year | period |  value  |                                                footnotes                                                |
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
-| PCU517---517--- | 2025 |  M01   | 113.913 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU517---517--- | 2024 |  M12   | 112.815 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU517---517--- | 2024 |  M11   | 112.847 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU517---517--- | 2024 |  M10   | 112.579 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU517---517--- | 2025 |  M03   | 114.435 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU517---517--- | 2025 |  M02   | 114.685 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU517---517--- | 2025 |  M01   | 113.958 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU517---517--- | 2024 |  M12   | 112.852 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU517---517--- | 2024 |  M11   | 112.888 |                                                                                                         |
+| PCU517---517--- | 2024 |  M10   | 112.579 |                                                                                                         |
 | PCU517---517--- | 2024 |  M09   | 111.844 |                                                                                                         |
 | PCU517---517--- | 2024 |  M08   | 112.144 |                                                                                                         |
 | PCU517---517--- | 2024 |  M07   | 111.651 |                                                                                                         |

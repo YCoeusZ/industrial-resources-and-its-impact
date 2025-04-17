@@ -1,10 +1,12 @@
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
 |    series id    | year | period |  value  |                                                footnotes                                                |
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
-| PCU516---516--- | 2025 |  M01   | 106.997 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU516---516--- | 2024 |  M12   | 112.037 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU516---516--- | 2024 |  M11   | 113.779 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU516---516--- | 2024 |  M10   | 116.668 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU516---516--- | 2025 |  M03   | 102.487 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU516---516--- | 2025 |  M02   | 105.020 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU516---516--- | 2025 |  M01   | 107.328 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU516---516--- | 2024 |  M12   | 112.321 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU516---516--- | 2024 |  M11   | 114.007 |                                                                                                         |
+| PCU516---516--- | 2024 |  M10   | 116.659 |                                                                                                         |
 | PCU516---516--- | 2024 |  M09   | 115.582 |                                                                                                         |
 | PCU516---516--- | 2024 |  M08   | 110.321 |                                                                                                         |
 | PCU516---516--- | 2024 |  M07   | 114.286 |                                                                                                         |
