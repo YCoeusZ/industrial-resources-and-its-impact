@@ -1,0 +1,1 @@
+We will seggragate each person's work to prevent mess with versioon control on ipynb. 

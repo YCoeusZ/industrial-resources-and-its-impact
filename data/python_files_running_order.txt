@@ -1,0 +1,8 @@
+1,"processing/DC02/DC02_identify_relevant_NAICS.py"
+2,"processing/DC01/DC01_collection.py"
+3,"processing/PD01/PD01_create_weighted_index.py"
+4,"processing/PD02/PD02_proportional_change_for_stock.py"
+5,"processing/PD03/PD03_collection.py"
+6,"collecting/DCO02_collecting_ppi.py"
+7,"processing/PD04/pd04_monthly-to-daily-pro-ppi.py"
+8,"processing/PD05/PD05_collection.py"

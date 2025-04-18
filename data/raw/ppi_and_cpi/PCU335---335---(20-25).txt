@@ -1,10 +1,12 @@
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
 |    series id    | year | period |  value  |                                                footnotes                                                |
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
-| PCU335---335--- | 2025 |  M01   | 202.573 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU335---335--- | 2024 |  M12   | 202.331 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU335---335--- | 2024 |  M11   | 201.963 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU335---335--- | 2024 |  M10   | 201.739 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU335---335--- | 2025 |  M03   | 204.319 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU335---335--- | 2025 |  M02   | 203.483 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU335---335--- | 2025 |  M01   | 202.361 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU335---335--- | 2024 |  M12   | 202.098 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU335---335--- | 2024 |  M11   | 201.956 |                                                                                                         |
+| PCU335---335--- | 2024 |  M10   | 201.739 |                                                                                                         |
 | PCU335---335--- | 2024 |  M09   | 202.070 |                                                                                                         |
 | PCU335---335--- | 2024 |  M08   | 202.363 |                                                                                                         |
 | PCU335---335--- | 2024 |  M07   | 202.230 |                                                                                                         |

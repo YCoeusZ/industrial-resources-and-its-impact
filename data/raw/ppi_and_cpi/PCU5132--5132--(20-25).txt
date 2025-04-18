@@ -1,10 +1,12 @@
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
 |    series id    | year | period |  value  |                                                footnotes                                                |
 +-----------------+------+--------+---------+---------------------------------------------------------------------------------------------------------+
-| PCU5132--5132-- | 2025 |  M01   | 108.492 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU5132--5132-- | 2024 |  M12   | 106.717 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU5132--5132-- | 2024 |  M11   | 107.524 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
-| PCU5132--5132-- | 2024 |  M10   | 106.916 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU5132--5132-- | 2025 |  M03   | 106.559 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU5132--5132-- | 2025 |  M02   | 106.647 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU5132--5132-- | 2025 |  M01   | 106.071 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU5132--5132-- | 2024 |  M12   | 106.472 | Preliminary. All indexes are subject to monthly revisions up to four months after original publication. |
+| PCU5132--5132-- | 2024 |  M11   | 107.253 |                                                                                                         |
+| PCU5132--5132-- | 2024 |  M10   | 106.916 |                                                                                                         |
 | PCU5132--5132-- | 2024 |  M09   | 105.835 |                                                                                                         |
 | PCU5132--5132-- | 2024 |  M08   | 104.742 |                                                                                                         |
 | PCU5132--5132-- | 2024 |  M07   | 105.595 |                                                                                                         |

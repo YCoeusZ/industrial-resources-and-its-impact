@@ -6,7 +6,7 @@
 
 def v_datetime(df_in, str_date_col, str_col): 
     """
-    Fill in data linearly
+    Fill in data linearly. This function changes the dataframe df_in itself, I should stop letting functions change the input in the future when programing in python, it is unclear if something is a pointer or not in python. 
     
     :param df_in: A pandas dataframe. 
     :param str_date_col: the name of the column in df_in with dates (with type datetime). 
