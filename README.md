@@ -245,7 +245,8 @@ The further data processing with inflation adjustment increase some of the corre
          + PPI-5132 (Software publisher) pro-change 60 days ago 
          + Platinum price pro-change 60 days ago
 
-
+         An observation on the EBM model is that it depends on some of the parameters "consistently", we will use the following PDP generated with the interpret package on the "most important" parameter "Tech index pro-change 20 days ago" as an example:
+         ![image](https://github.com/user-attachments/assets/7af24f95-89b5-492f-86fb-af4a4e5da925)
 
 * **NN (Neural Network)**: 
 
